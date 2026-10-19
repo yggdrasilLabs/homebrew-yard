@@ -1,26 +1,26 @@
 class Yard < Formula
   desc "Data engineering CLI - plugin-based provider architecture for cloud data pipelines"
   homepage "https://github.com/sean-mca/yard"
-  version "2.1.0"
+  version "2.1.1"
   license "BUSL-1.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/sean-mca/yard/releases/download/v#{version}/yard-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "d9b56510820aa8f95c91052b144f0927d1e4578969c054c764d20bc35aec284f"
+      sha256 "c92ef7a750263b27ce448332aee1906e8e4be73f5ed83e94d51b1799ad970b33"
     else
       url "https://github.com/sean-mca/yard/releases/download/v#{version}/yard-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c05b025d9a705648c1b72db149890228451d4d71f8c9546e733b0e39bacbdb2c"
+      sha256 "86e074a600edda3daa3a4b48bd40ded20a9756736acdc4dbb612da8948edb590"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/sean-mca/yard/releases/download/v#{version}/yard-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c728d4ee9dfc99ca3074ac84f3d35de6bf9ee36c77cbd387bb1eb664d7777dfa"
+      sha256 "6de63878af18f2e0a9ef5fafa1af82476159f502e9adb4cb5904eb2b7c88731a"
     else
       url "https://github.com/sean-mca/yard/releases/download/v#{version}/yard-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b124ca4f355079211ac20ab23ac30a254216eef7bd63f7636cda7c1a0e7377ee"
+      sha256 "fc6e24986e019594e5ca826fc4522a40336dd8610cc291908007c04a76a36d05"
     end
   end
 
